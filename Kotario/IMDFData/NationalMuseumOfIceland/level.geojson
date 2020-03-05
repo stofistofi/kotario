@@ -172,13 +172,13 @@
                     "type": "Point"
                 },
                 "name": {
-                    "en": "Ground Level"
+                    "en": "1st Floor"
                 },
                 "ordinal": 0,
                 "outdoor": false,
                 "restriction": null,
                 "short_name": {
-                    "en": "GL"
+                    "en": "1"
                 }
             },
             "type": "Feature"
