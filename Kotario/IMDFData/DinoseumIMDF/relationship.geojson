@@ -1,0 +1,19 @@
+{
+  "id": "r0",
+  "type": "Feature",
+  "feature_type": "relationship",
+  "geometry": null,
+  "properties": {
+    "category": "traversal",
+    "direction": "directed",
+    "hours": null,
+    "origin": {
+      "id": "6382938a-b59b-4631-b2ea-54ddd13562a3",
+      "feature_type": "unit"
+    },
+    "destination": {
+      "id": "4e930925-3206-44d6-bf49-fc550296f8e4",
+      "feature_type": "unit"
+    }
+  }
+}

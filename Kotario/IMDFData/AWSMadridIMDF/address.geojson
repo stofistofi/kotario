@@ -1,0 +1,21 @@
+{
+    "features": [
+        {
+            "feature_type": "address",
+            "geometry": null,
+            "id": "6948DF80-14BD-4E04-8842-7668D9C001F5",
+            "properties": {
+                "address": "Calle Ramirez de Prado 5",
+                "country": "ES",
+                "locality": "Madrid",
+                "postal_code": "28005",
+                "postal_code_ext": null,
+                "province": "ES-MD",
+                "unit": null
+            },
+            "type": "Feature"
+        }
+    ],
+    "name": "address",
+    "type": "FeatureCollection"
+}

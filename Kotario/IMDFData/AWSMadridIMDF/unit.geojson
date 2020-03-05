@@ -1,0 +1,56 @@
+{
+  "type": "FeatureCollection",
+  "name": "unit",
+  "features": [
+    {
+      "type": "Feature",
+      "feature_type": "unit",
+      "id": "3F897E85-62CE-4B2C-A957-FCF0CCE649FD",
+      "properties": {
+        "accessibility": null,
+        "alt_name": null,
+        "category": "nonpublic",
+        "display_point": {
+          "coordinates": [
+            -3.6889412999153137,
+            40.399579091581245
+          ],
+          "type": "Point"
+        },
+        "level_id": "10929DF8-15C5-472B-9398-7158AB89A0A6",
+        "name": null,
+        "restriction": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                  -3.6888098716735835,
+                  40.39965671100849
+                ],
+                [
+                  -3.6895152926445007,
+                  40.399697563302674
+                ],
+                [
+                  -3.68952602148056,
+                  40.399528026119754
+                ],
+                [
+                  -3.6894750595092773,
+                  40.3994790032403
+                ],
+                [
+                  -3.6888340115547176,
+                  40.399436108191516
+                ],
+                [
+                  -3.6888098716735835,
+                  40.39965671100849
+                ]
+            ]
+        ]
+      }
+    }]
+}

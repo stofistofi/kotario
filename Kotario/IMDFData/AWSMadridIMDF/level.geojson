@@ -1,0 +1,35 @@
+{
+  "id": "10929DF8-15C5-472B-9398-7158AB89A0A6",
+  "type": "Feature",
+  "feature_type": "level",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [-3.689467, 40.400589],
+        [-3.688224, 40.400495],
+        [-3.688310, 40.399449],
+        [-3.689581, 40.399486],
+        [-3.689467, 40.400589]
+      ]
+    ]
+  },
+  "properties": {
+    "category": "parking",
+    "restriction": null,
+    "ordinal": 0,
+    "outdoor": false,
+    "name": {
+      "en": "Ground Floor"
+    },
+    "short_name": {
+      "en": "1"
+    },
+    "display_point": {
+      "type": "Point",
+      "coordinates": [-3.688959, 40.399466]
+    },
+    "address_id": "6948DF80-14BD-4E04-8842-7668D9C001F5",
+    "building_ids": ["4B8302DA-21AD-401F-AF45-1DFD956B80B5"]
+  }
+}

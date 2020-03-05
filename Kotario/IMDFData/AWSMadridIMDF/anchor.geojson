@@ -1,0 +1,22 @@
+{
+    "features": [
+        {
+            "feature_type": "anchor",
+            "geometry": {
+                "coordinates": [
+                    -3.6889412999153137,
+                    40.399579091581245
+                ],
+                "type": "Point"
+            },
+            "id": "D952EB9F-7AD2-4B1B-B3CE-386735205990",
+            "properties": {
+                "address_id": "6948DF80-14BD-4E04-8842-7668D9C001F5",
+                "unit_id": "3F897E85-62CE-4B2C-A957-FCF0CCE649FD"
+            },
+            "type": "Feature"
+        }
+    ],
+    "name": "Anchor",
+    "type": "FeatureCollection"
+}

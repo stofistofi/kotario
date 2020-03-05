@@ -1,0 +1,25 @@
+{
+  "id": "46e59bff-ba48-4722-8a74-9f71d29679b4",
+  "type": "Feature",
+  "feature_type": "amenity",
+  "geometry": {
+    "type": "Point",
+    "coordinates":
+    [
+      -3.6891853809356694,
+      40.39954436707164
+    ]
+  },
+  "properties": {
+    "category": "reception.desk",
+    "accessibility": ["tdd", "trs"],
+    "name": null,
+    "alt_name": null,
+    "phone": null,
+    "website": null,
+    "hours": null,
+    "unit_ids": ["3F897E85-62CE-4B2C-A957-FCF0CCE649FD"],
+    "address_id": "6948DF80-14BD-4E04-8842-7668D9C001F5",
+    "correlation_id": null
+  }
+}

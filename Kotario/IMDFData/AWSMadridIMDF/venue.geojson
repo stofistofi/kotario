@@ -1,0 +1,42 @@
+{
+    "features": [
+        {
+            "feature_type": "venue",
+            "geometry": {
+                "coordinates": [
+                    [
+                      [-3.689467, 40.400589],
+                      [-3.688224, 40.400495],
+                      [-3.688310, 40.399449],
+                      [-3.689581, 40.399486],
+                      [-3.689467, 40.400589]
+                    ]
+                ],
+                "type": "Polygon"
+            },
+            "id": "ED280816-E404-444A-A2D9-FFD2D171F928",
+            "properties": {
+                "address_id": "6948DF80-14BD-4E04-8842-7668D9C001F5",
+                "alt_name": null,
+                "category": "museum",
+                "display_point": {
+                    "coordinates": [
+                        -3.6889412999153137,
+                        40.399579091581245
+                    ],
+                    "type": "Point"
+                },
+                "hours": "Su-Sa 09:00-17:00",
+                "name": {
+                    "en": "AWS Madrid"
+                },
+                "phone": null,
+                "restriction": null,
+                "website": "https://aws.com"
+            },
+            "type": "Feature"
+        }
+    ],
+    "name": "venue",
+    "type": "FeatureCollection"
+}

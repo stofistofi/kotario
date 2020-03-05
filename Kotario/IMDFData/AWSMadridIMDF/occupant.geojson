@@ -1,0 +1,33 @@
+{
+    "features": [
+        {
+            "feature_type": "occupant",
+            "geometry": null,
+            "id": "8E7C2F0A-6BB8-485C-917E-6B605A0DDF29",
+            "properties": {
+                "address_id": null,
+                "alt_name": null,
+                "anchor_id": "D952EB9F-7AD2-4B1B-B3CE-386735205990",
+                "category": "restaurant",
+                "display_point": {
+                    "coordinates": [
+                      -3.6889412999153137,
+                      40.399579091581245
+                    ],
+                    "type": "Point"
+                },
+                "hours": "Su-Sa 09:00-17:00",
+                "name": {
+                    "en": "Mailroom"
+                },
+                "phone": "+14087924511",
+                "restriction": null,
+                "website": null,
+                "correlation_id": null
+            },
+            "type": "Feature"
+        }
+    ],
+    "name": "Occupant",
+    "type": "FeatureCollection"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "98aa956a-fae5-422d-9814-f4f3694c996b",
+  "type": "Feature",
+  "feature_type": "opening",
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -21.948138177394867,
+        64.14179227280141
+      ],
+      [
+        -21.948170363903046,
+        64.14177004595689
+      ]
+    ]
+  },
+  "properties": {
+    "category": "pedestrian",
+    "accessibility": [
+      "wheelchair",
+      "tactilepaving"
+    ],
+    "access_control": [
+      "badgereader"
+    ],
+    "door": {
+      "automatic": true,
+      "material": "glass",
+      "type": "sliding"
+    },
+    "name": {
+      "en": "Door A"
+    },
+    "alt_name": null,
+    "display_point": null,
+    "level_id": "f2c18401-0737-44de-afe3-db8d00a5b235"
+  }
+}
+
