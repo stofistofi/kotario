@@ -63,6 +63,38 @@
                 "unit_id": "ef68f4a4-28ea-4e37-aa51-d57c7c27d24b"
             },
             "type": "Feature"
+        },
+        {
+            "feature_type": "anchor",
+            "geometry": {
+                "coordinates": [
+                  -21.947926282882687,
+                  64.14198295499982
+                ],
+                "type": "Point"
+            },
+            "id": "045e61db-3b3b-4cf3-bf10-625aff1ea5ce",
+            "properties": {
+                "address_id": "f6ef4b86-e358-40ef-8fa5-9168a2ca1128",
+                "unit_id": "45d38112-e7be-4ae9-90c4-f0765b40df0b"
+            },
+            "type": "Feature"
+        },
+        {
+            "feature_type": "anchor",
+            "geometry": {
+                "coordinates": [
+                  -21.948022842407227,
+                  64.14190223692839
+                ],
+                "type": "Point"
+            },
+            "id": "b4be97d6-3eb9-4e0c-9443-dd76a1c09f09",
+            "properties": {
+                "address_id": "f6ef4b86-e358-40ef-8fa5-9168a2ca1128",
+                "unit_id": "45d38112-e7be-4ae9-90c4-f0765b40df0b"
+            },
+            "type": "Feature"
         }
     ],
     "name": "Anchor",
