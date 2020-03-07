@@ -34,6 +34,7 @@ class IndoorMapViewController: UIViewController, MKMapViewDelegate, LevelPickerD
         self.mapView.delegate = self
         self.mapView.register(PointAnnotationView.self, forAnnotationViewWithReuseIdentifier: pointAnnotationViewIdentifier)
         self.mapView.register(LabelAnnotationView.self, forAnnotationViewWithReuseIdentifier: labelAnnotationViewIdentifier)
+        
 
         // Decode the IMDF data. In this case, IMDF data is stored locally in the current bundle.
         let imdfDirectory = Bundle.main.resourceURL!.appendingPathComponent("IMDFData/NationalMuseumOfIceland")
@@ -71,7 +72,41 @@ class IndoorMapViewController: UIViewController, MKMapViewDelegate, LevelPickerD
         // Setup the level picker with the shortName of each level
         setupLevelPicker()
         
+        // Draw path between Painting 1 and Painting 2
+        let sourceCoordiante = CLLocationCoordinate2DMake(-21.947926282882687,
+        64.14198295499982)
+        let destinationCoordinate = CLLocationCoordinate2DMake(-21.948022842407227,
+        64.14190223692839)
+        
+        let sourcePlacemark = MKPlacemark(coordinate: sourceCoordiante)
+        let destinationPlacemark = MKPlacemark(coordinate: destinationCoordinate)
+        
+        let sourceItem = MKMapItem(placemark: sourcePlacemark)
+        let destinationItem = MKMapItem(placemark: destinationPlacemark)
+        
+        let directionRequest = MKDirections.Request()
+        directionRequest.source = sourceItem
+        directionRequest.destination = destinationItem
+        directionRequest.transportType = .walking
+        
+        let directions = MKDirections(request: directionRequest)
+        directions.calculate(completionHandler: {
+            response, error in
+            guard let response = response else {
+                if let error = error {
+                    print("ERROR", error)
+                }
+                return
+            }
+            let route = response.routes[0]
+            self.mapView.addOverlay(route.polyline, level: .aboveLabels)
+            
+            let rekt = route.polyline.boundingMapRect
+            self.mapView.setRegion(MKCoordinateRegion(rekt), animated: true)
+        })
     }
+    
+    
 
     private func showFeaturesForOrdinal(_ ordinal: Int) {
         guard self.venue != nil else {
@@ -198,6 +233,14 @@ class IndoorMapViewController: UIViewController, MKMapViewDelegate, LevelPickerD
         if let ordinal = location.floor?.level {
             showFeaturesForOrdinal(ordinal)
         }
+    }
+    
+    func mapView(  mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        let renderer = MKPolylineRenderer(overlay: overlay)
+        renderer.strokeColor = UIColor.blue
+        renderer.lineWidth = 5.0
+        print("no malarkey")
+        return renderer
     }
     
     // MARK: - LevelPickerDelegate

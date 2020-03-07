@@ -1,0 +1,169 @@
+{
+    "features": [
+        {
+            "feature_type": "occupant",
+            "geometry": null,
+            "id": "e32162d3-b274-4f5d-8ed0-4d7ad55af1c0",
+            "properties": {
+                "address_id": "f6ef4b86-e358-40ef-8fa5-9168a2ca1128",
+                "alt_name": null,
+                "anchor_id": "39e116a4-85a7-46d2-9c0c-20dcb41ab7c0",
+                "category": "cafe",
+                "display_point": {
+                    "coordinates": [
+                      -21.94808453321457,
+                      64.14177004595689
+                    ],
+                    "type": "Point"
+                },
+                "hours": "Tu-Su 10:00-17:00",
+                "name": {
+                    "en": "Kafe"
+                },
+                "phone": "+14087924511",
+                "restriction": null,
+                "website": null,
+                "correlation_id": null
+            },
+            "type": "Feature"
+        },
+        {
+            "feature_type": "occupant",
+            "geometry": null,
+            "id": "386b94eb-1414-4425-9277-d0e826d458a9",
+            "properties": {
+                "address_id": "f6ef4b86-e358-40ef-8fa5-9168a2ca1128",
+                "alt_name": null,
+                "anchor_id": "3a069bad-f8d3-4276-814f-976472537aad",
+                "category": "artgallery",
+                "display_point": {
+                    "coordinates": [
+                      -21.948138177394867,
+                      64.14200401184941
+                    ],
+                    "type": "Point"
+                },
+                "hours": "Tu-Su 10:00-17:00",
+                "name": {
+                    "en": "Main Hall"
+                },
+                "phone": null,
+                "restriction": null,
+                "website": null,
+                "correlation_id": null
+            },
+            "type": "Feature"
+        },
+        {
+            "feature_type": "occupant",
+            "geometry": null,
+            "id": "c904d35c-7deb-440b-8092-45e75fd1c497",
+            "properties": {
+                "address_id": "f6ef4b86-e358-40ef-8fa5-9168a2ca1128",
+                "alt_name": null,
+                "anchor_id": "aee3e8ec-2e25-4af0-bf16-bb9d3c851d08",
+                "category": "lobby",
+                "display_point": {
+                    "coordinates": [
+                      -21.9479101896286,
+                      64.1421560886225
+                    ],
+                    "type": "Point"
+                },
+                "hours": "Tu-Su 10:00-17:00",
+                "name": {
+                    "en": "Reception Hall"
+                },
+                "phone": null,
+                "restriction": null,
+                "website": null,
+                "correlation_id": null
+            },
+            "type": "Feature"
+        },
+        {
+            "feature_type": "occupant",
+            "geometry": null,
+            "id": "3097cc89-b6b6-4b5e-8c8b-979c47896ba5",
+            "properties": {
+                "address_id": "f6ef4b86-e358-40ef-8fa5-9168a2ca1128",
+                "alt_name": null,
+                "anchor_id": "10dd37a8-47cc-413f-81ac-886f4fc8b3de",
+                "category": "artgallery",
+                "display_point": {
+                    "coordinates": [
+                      -21.948138177394867,
+                      64.14200401184941
+                    ],
+                    "type": "Point"
+                },
+                "hours": "Tu-Su 10:00-17:00",
+                "name": {
+                    "en": "Glass Hall"
+                },
+                "phone": null,
+                "restriction": null,
+                "website": null,
+                "correlation_id": null
+            },
+            "type": "Feature"
+        },
+        {
+            "feature_type": "occupant",
+            "geometry": null,
+            "id": "469f01b9-08e1-4eeb-9b83-11ac9c9ae152",
+            "properties": {
+                "address_id": "f6ef4b86-e358-40ef-8fa5-9168a2ca1128",
+                "alt_name": null,
+                "anchor_id": "045e61db-3b3b-4cf3-bf10-625aff1ea5ce",
+                "category": "artgallery",
+                "display_point": {
+                    "coordinates": [
+                      -21.947926282882687,
+                      64.14198295499982
+                    ],
+                    "type": "Point"
+                },
+                "hours": "Tu-Su 10:00-17:00",
+                "name": {
+                    "en": "Painting 1"
+                },
+                "phone": null,
+                "restriction": null,
+                "website": null,
+                "correlation_id": null
+            },
+            "type": "Feature"
+        },
+        {
+            "feature_type": "occupant",
+            "geometry": null,
+            "id": "650db7aa-4230-4a27-a301-daa60829ed09",
+            "properties": {
+                "address_id": "f6ef4b86-e358-40ef-8fa5-9168a2ca1128",
+                "alt_name": null,
+                "anchor_id": "b4be97d6-3eb9-4e0c-9443-dd76a1c09f09",
+                "category": "artgallery",
+                "display_point": {
+                    "coordinates": [
+                      -21.948022842407227,
+                      64.14190223692839
+                    ],
+                    "type": "Point"
+                },
+                "hours": "Tu-Su 10:00-17:00",
+                "name": {
+                    "en": "Painting 2"
+                },
+                "phone": null,
+                "restriction": null,
+                "website": null,
+                "correlation_id": null
+            },
+            "type": "Feature"
+        }
+    ],
+    "name": "Occupant",
+    "type": "FeatureCollection"
+}
+
