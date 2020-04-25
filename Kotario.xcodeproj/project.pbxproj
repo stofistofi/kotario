@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10A9666C2412B68A001779EC /* Route1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10A9666B2412B68A001779EC /* Route1.plist */; };
 		4306A889223825C9005E7E97 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4306A888223825C9005E7E97 /* Styles.swift */; };
 		4353A0932228CD9600F2977B /* IMDFData in Resources */ = {isa = PBXBuildFile; fileRef = 4353A0922228CD9500F2977B /* IMDFData */; };
 		436217FD2256A4800075E16C /* LocalizedName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436217FC2256A4800075E16C /* LocalizedName.swift */; };
@@ -34,7 +33,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		10A9666B2412B68A001779EC /* Route1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Route1.plist; sourceTree = "<group>"; };
 		1D7EAD901D7EB48000000001 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 		1F54B7201F54F7D000000001 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		4306A888223825C9005E7E97 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
@@ -78,14 +76,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		10A9666A2412B652001779EC /* Routes */ = {
-			isa = PBXGroup;
-			children = (
-				10A9666B2412B68A001779EC /* Route1.plist */,
-			);
-			path = Routes;
-			sourceTree = "<group>";
-		};
 		1D7EB3A01D7EAFD000000001 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,7 +132,6 @@
 				4306A888223825C9005E7E97 /* Styles.swift */,
 				7E4CC6C9224222C400724B06 /* Views */,
 				7EEA2CBA21CBF218005539F2 /* IMDFModel */,
-				10A9666A2412B652001779EC /* Routes */,
 				4353A0922228CD9500F2977B /* IMDFData */,
 				7E61CF08215E1FF600EAD172 /* LaunchScreen.storyboard */,
 				7E61CF03215E1FF500EAD172 /* Main.storyboard */,
@@ -249,7 +238,6 @@
 				7E61CF07215E1FF600EAD172 /* Assets.xcassets in Resources */,
 				F77FB50D2276FE70006F9FD0 /* README.md in Resources */,
 				7E61CF05215E1FF500EAD172 /* Main.storyboard in Resources */,
-				10A9666C2412B68A001779EC /* Route1.plist in Resources */,
 				4353A0932228CD9600F2977B /* IMDFData in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

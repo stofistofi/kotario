@@ -73,10 +73,8 @@ class IndoorMapViewController: UIViewController, MKMapViewDelegate, LevelPickerD
         setupLevelPicker()
         
         // Draw path between Painting 1 and Painting 2
-        let sourceCoordiante = CLLocationCoordinate2DMake(-21.947926282882687,
-        64.14198295499982)
-        let destinationCoordinate = CLLocationCoordinate2DMake(-21.948022842407227,
-        64.14190223692839)
+        let sourceCoordiante = CLLocationCoordinate2DMake(64.1504675721289, -21.959567070007324)
+        let destinationCoordinate = CLLocationCoordinate2DMake(65.671190, -18.108623)
         
         let sourcePlacemark = MKPlacemark(coordinate: sourceCoordiante)
         let destinationPlacemark = MKPlacemark(coordinate: destinationCoordinate)
@@ -87,7 +85,7 @@ class IndoorMapViewController: UIViewController, MKMapViewDelegate, LevelPickerD
         let directionRequest = MKDirections.Request()
         directionRequest.source = sourceItem
         directionRequest.destination = destinationItem
-        directionRequest.transportType = .walking
+        directionRequest.transportType = .automobile
         
         let directions = MKDirections(request: directionRequest)
         directions.calculate(completionHandler: {
@@ -98,14 +96,12 @@ class IndoorMapViewController: UIViewController, MKMapViewDelegate, LevelPickerD
                 }
                 return
             }
-            let route = response.routes[0]
-            self.mapView.addOverlay(route.polyline, level: .aboveLabels)
-            
-            let rekt = route.polyline.boundingMapRect
-            self.mapView.setRegion(MKCoordinateRegion(rekt), animated: true)
+            for route in response.routes {
+                self.mapView.addOverlay(route.polyline, level: .aboveRoads)
+                self.mapView.setVisibleMapRect(route.polyline.boundingMapRect, animated: true)
+            }
         })
     }
-    
     
 
     private func showFeaturesForOrdinal(_ ordinal: Int) {
@@ -159,8 +155,10 @@ class IndoorMapViewController: UIViewController, MKMapViewDelegate, LevelPickerD
     }
 
     // MARK: - MKMapViewDelegate
+
     
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+
         guard let shape = overlay as? (MKShape & MKGeoJSONObject),
             let feature = currentLevelFeatures.first( where: { $0.geometry.contains( where: { $0 == shape }) }) else {
             return MKOverlayRenderer(overlay: overlay)
@@ -176,6 +174,9 @@ class IndoorMapViewController: UIViewController, MKMapViewDelegate, LevelPickerD
             renderer = MKMultiPolylineRenderer(overlay: overlay)
         case is MKPolyline:
             renderer = MKPolylineRenderer(overlay: overlay)
+            renderer.strokeColor = UIColor.blue
+            renderer.lineWidth = 5.0
+            print("BLUE", overlay.coordinate)
         default:
             return MKOverlayRenderer(overlay: overlay)
         }
@@ -185,7 +186,8 @@ class IndoorMapViewController: UIViewController, MKMapViewDelegate, LevelPickerD
 
         return renderer
     }
-
+ 
+    
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if annotation is MKUserLocation {
             return nil
@@ -234,14 +236,7 @@ class IndoorMapViewController: UIViewController, MKMapViewDelegate, LevelPickerD
             showFeaturesForOrdinal(ordinal)
         }
     }
-    
-    func mapView(  mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-        let renderer = MKPolylineRenderer(overlay: overlay)
-        renderer.strokeColor = UIColor.blue
-        renderer.lineWidth = 5.0
-        print("no malarkey")
-        return renderer
-    }
+
     
     // MARK: - LevelPickerDelegate
     
