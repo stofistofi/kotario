@@ -34,6 +34,7 @@ class IndoorMapViewController: UIViewController, MKMapViewDelegate, LevelPickerD
         self.mapView.delegate = self
         self.mapView.register(PointAnnotationView.self, forAnnotationViewWithReuseIdentifier: pointAnnotationViewIdentifier)
         self.mapView.register(LabelAnnotationView.self, forAnnotationViewWithReuseIdentifier: labelAnnotationViewIdentifier)
+        
 
         // Decode the IMDF data. In this case, IMDF data is stored locally in the current bundle.
         let imdfDirectory = Bundle.main.resourceURL!.appendingPathComponent("IMDFData/NationalMuseumOfIceland")
@@ -70,8 +71,39 @@ class IndoorMapViewController: UIViewController, MKMapViewDelegate, LevelPickerD
         
         // Setup the level picker with the shortName of each level
         setupLevelPicker()
+        /*
+        // Draw path between Painting 1 and Painting 2
+        let sourceCoordiante = CLLocationCoordinate2DMake(64.1504675721289, -21.959567070007324)
+        let destinationCoordinate = CLLocationCoordinate2DMake(65.671190, -18.108623)
         
+        let sourcePlacemark = MKPlacemark(coordinate: sourceCoordiante)
+        let destinationPlacemark = MKPlacemark(coordinate: destinationCoordinate)
+        
+        let sourceItem = MKMapItem(placemark: sourcePlacemark)
+        let destinationItem = MKMapItem(placemark: destinationPlacemark)
+        
+        let directionRequest = MKDirections.Request()
+        directionRequest.source = sourceItem
+        directionRequest.destination = destinationItem
+        directionRequest.transportType = .automobile
+        
+        let directions = MKDirections(request: directionRequest)
+        directions.calculate(completionHandler: {
+            response, error in
+            guard let response = response else {
+                if let error = error {
+                    print("ERROR", error)
+                }
+                return
+            }
+            for route in response.routes {
+                self.mapView.addOverlay(route.polyline, level: .aboveRoads)
+                self.mapView.setVisibleMapRect(route.polyline.boundingMapRect, animated: true)
+            }
+        })
+    */
     }
+    
 
     private func showFeaturesForOrdinal(_ ordinal: Int) {
         guard self.venue != nil else {
@@ -124,8 +156,10 @@ class IndoorMapViewController: UIViewController, MKMapViewDelegate, LevelPickerD
     }
 
     // MARK: - MKMapViewDelegate
+
     
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+
         guard let shape = overlay as? (MKShape & MKGeoJSONObject),
             let feature = currentLevelFeatures.first( where: { $0.geometry.contains( where: { $0 == shape }) }) else {
             return MKOverlayRenderer(overlay: overlay)
@@ -141,6 +175,9 @@ class IndoorMapViewController: UIViewController, MKMapViewDelegate, LevelPickerD
             renderer = MKMultiPolylineRenderer(overlay: overlay)
         case is MKPolyline:
             renderer = MKPolylineRenderer(overlay: overlay)
+            renderer.strokeColor = UIColor.blue
+            renderer.lineWidth = 5.0
+            print("BLUE", overlay.coordinate)
         default:
             return MKOverlayRenderer(overlay: overlay)
         }
@@ -150,7 +187,8 @@ class IndoorMapViewController: UIViewController, MKMapViewDelegate, LevelPickerD
 
         return renderer
     }
-
+ 
+    
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if annotation is MKUserLocation {
             return nil
@@ -199,6 +237,7 @@ class IndoorMapViewController: UIViewController, MKMapViewDelegate, LevelPickerD
             showFeaturesForOrdinal(ordinal)
         }
     }
+
     
     // MARK: - LevelPickerDelegate
     

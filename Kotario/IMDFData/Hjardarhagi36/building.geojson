@@ -1,0 +1,29 @@
+{
+    "features": [
+        {
+            "feature_type": "building",
+            "geometry": null,
+            "id": "9e3c0bec-5224-4d96-89de-dd2e6c224a62",
+            "properties": {
+                "address_id": "f6ef4b86-e358-40ef-8fa5-9168a2ca1128",
+                "alt_name": null,
+                "category": "museum",
+                "display_point": {
+                    "coordinates": [
+                      -21.948170363903046,
+                      64.14195136969548
+                    ],
+                    "type": "Point"
+                },
+                "name": {
+                    "en": "National Museum of Iceland"
+                },
+                "restriction": null
+            },
+            "type": "Feature"
+        }
+    ],
+    "name": "building",
+    "type": "FeatureCollection"
+}
+

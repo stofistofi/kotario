@@ -64,23 +64,6 @@
             },
             "type": "Feature"
         },
-        
-        {
-            "feature_type": "anchor",
-            "geometry": {
-                "coordinates": [
-                  -21.948022842407227,
-                  64.14190223692839
-                ],
-                "type": "Point"
-            },
-            "id": "b4be97d6-3eb9-4e0c-9443-dd76a1c09f09",
-            "properties": {
-                "address_id": "f6ef4b86-e358-40ef-8fa5-9168a2ca1128",
-                "unit_id": "45d38112-e7be-4ae9-90c4-f0765b40df0b"
-            },
-            "type": "Feature"
-        },
         {
             "feature_type": "anchor",
             "geometry": {
@@ -106,56 +89,7 @@
                 ],
                 "type": "Point"
             },
-            "id": "20bdcac6-8132-4585-bb57-0b7847b94fc0",
-            "properties": {
-                "address_id": "f6ef4b86-e358-40ef-8fa5-9168a2ca1128",
-                "unit_id": "45d38112-e7be-4ae9-90c4-f0765b40df0b"
-            },
-            "type": "Feature"
-        },
-        {
-            "feature_type": "anchor",
-            "geometry": {
-                "coordinates": [
-                  -21.948181092739105,
-                  64.14193967142546
-                ],
-                "type": "Point"
-            },
-            "id": "bc5aab92-c505-4548-8199-c04f22aed032",
-            "properties": {
-                "address_id": "f6ef4b86-e358-40ef-8fa5-9168a2ca1128",
-                "unit_id": "45d38112-e7be-4ae9-90c4-f0765b40df0b"
-            },
-            "type": "Feature"
-        },
-        {
-            "feature_type": "anchor",
-            "geometry": {
-                "coordinates": [
-                  -21.94843590259552,
-                  64.14189287829626
-                ],
-                "type": "Point"
-            },
-            "id": "6ac9fcc8-61ff-459d-b8cb-372c27df7642",
-            "properties": {
-                "address_id": "f6ef4b86-e358-40ef-8fa5-9168a2ca1128",
-                "unit_id": "45d38112-e7be-4ae9-90c4-f0765b40df0b"
-            },
-            "type": "Feature"
-        },
-        {
-            "feature_type": "anchor",
-            "geometry": {
-                "coordinates": [
-                  -21.948513686656952,
-                  64.14182385828671
-
-                ],
-                "type": "Point"
-            },
-            "id": "47931780-6977-438c-bead-d159610906c0",
+            "id": "b4be97d6-3eb9-4e0c-9443-dd76a1c09f09",
             "properties": {
                 "address_id": "f6ef4b86-e358-40ef-8fa5-9168a2ca1128",
                 "unit_id": "45d38112-e7be-4ae9-90c4-f0765b40df0b"

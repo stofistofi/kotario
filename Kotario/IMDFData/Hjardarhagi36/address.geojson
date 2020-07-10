@@ -1,0 +1,21 @@
+{
+    "features": [
+        {
+            "feature_type": "address",
+            "geometry": null,
+            "id": "f6ef4b86-e358-40ef-8fa5-9168a2ca1128",
+            "properties": {
+                "address": "Suðurgötu 41",
+                "country": "ISL",
+                "locality": "Reykjavík",
+                "postal_code": "102",
+                "postal_code_ext": null,
+                "province": "IS-1",
+                "unit": null
+            },
+            "type": "Feature"
+        }
+    ],
+    "name": "address",
+    "type": "FeatureCollection"
+}
