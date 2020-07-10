@@ -142,7 +142,7 @@
             "properties": {
                 "address_id": "f6ef4b86-e358-40ef-8fa5-9168a2ca1128",
                 "alt_name": null,
-                "anchor_id": "b4be97d6-3eb9-4e0c-9443-dd76a1c09f09",
+                "anchor_id": "20bdcac6-8132-4585-bb57-0b7847b94fc0",
                 "category": "artgallery",
                 "display_point": {
                     "coordinates": [
@@ -154,6 +154,87 @@
                 "hours": "Tu-Su 10:00-17:00",
                 "name": {
                     "en": "Painting 2"
+                },
+                "phone": null,
+                "restriction": null,
+                "website": null,
+                "correlation_id": null
+            },
+            "type": "Feature"
+        },
+        {
+            "feature_type": "occupant",
+            "geometry": null,
+            "id": "35787cf5-5fa9-4021-8f2b-b81f7a7fb636",
+            "properties": {
+                "address_id": "f6ef4b86-e358-40ef-8fa5-9168a2ca1128",
+                "alt_name": null,
+                "anchor_id": "bc5aab92-c505-4548-8199-c04f22aed032",
+                "category": "artgallery",
+                "display_point": {
+                    "coordinates": [
+                      -21.948181092739105,
+                      64.14193967142546
+                    ],
+                    "type": "Point"
+                },
+                "hours": "Tu-Su 10:00-17:00",
+                "name": {
+                    "en": "Statue 1"
+                },
+                "phone": null,
+                "restriction": null,
+                "website": null,
+                "correlation_id": null
+            },
+            "type": "Feature"
+        },
+        {
+            "feature_type": "occupant",
+            "geometry": null,
+            "id": "cdce5491-82d3-4355-8ff8-40868be62b09",
+            "properties": {
+                "address_id": "f6ef4b86-e358-40ef-8fa5-9168a2ca1128",
+                "alt_name": null,
+                "anchor_id": "6ac9fcc8-61ff-459d-b8cb-372c27df7642",
+                "category": "artgallery",
+                "display_point": {
+                    "coordinates": [
+                      -21.94843590259552,
+                      64.14189287829626
+                    ],
+                    "type": "Point"
+                },
+                "hours": "Tu-Su 10:00-17:00",
+                "name": {
+                    "en": "Painting 3"
+                },
+                "phone": null,
+                "restriction": null,
+                "website": null,
+                "correlation_id": null
+            },
+            "type": "Feature"
+        },
+        {
+            "feature_type": "occupant",
+            "geometry": null,
+            "id": "23fd5160-d160-49b6-86ca-7510108d3010",
+            "properties": {
+                "address_id": "f6ef4b86-e358-40ef-8fa5-9168a2ca1128",
+                "alt_name": null,
+                "anchor_id": "47931780-6977-438c-bead-d159610906c0",
+                "category": "artgallery",
+                "display_point": {
+                    "coordinates": [
+                      -21.948513686656952,
+                      64.14182385828671
+                    ],
+                    "type": "Point"
+                },
+                "hours": "Tu-Su 10:00-17:00",
+                "name": {
+                    "en": "Painting 4"
                 },
                 "phone": null,
                 "restriction": null,

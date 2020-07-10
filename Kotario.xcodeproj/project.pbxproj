@@ -33,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1029E4742454BCC7001BBC38 /* ReykjavikLocation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = ReykjavikLocation.gpx; path = Kotario/IMDFData/GPXdata/ReykjavikLocation.gpx; sourceTree = "<group>"; };
 		1D7EAD901D7EB48000000001 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 		1F54B7201F54F7D000000001 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		4306A888223825C9005E7E97 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
@@ -105,6 +106,7 @@
 		7E61CEF3215E1FF500EAD172 = {
 			isa = PBXGroup;
 			children = (
+				1029E4742454BCC7001BBC38 /* ReykjavikLocation.gpx */,
 				F77FB50C2276FE70006F9FD0 /* README.md */,
 				7E61CEFE215E1FF500EAD172 /* Kotario */,
 				7E61CEFD215E1FF500EAD172 /* Products */,

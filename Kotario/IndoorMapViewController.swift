@@ -71,7 +71,7 @@ class IndoorMapViewController: UIViewController, MKMapViewDelegate, LevelPickerD
         
         // Setup the level picker with the shortName of each level
         setupLevelPicker()
-        
+        /*
         // Draw path between Painting 1 and Painting 2
         let sourceCoordiante = CLLocationCoordinate2DMake(64.1504675721289, -21.959567070007324)
         let destinationCoordinate = CLLocationCoordinate2DMake(65.671190, -18.108623)
@@ -101,6 +101,7 @@ class IndoorMapViewController: UIViewController, MKMapViewDelegate, LevelPickerD
                 self.mapView.setVisibleMapRect(route.polyline.boundingMapRect, animated: true)
             }
         })
+    */
     }
     
 
